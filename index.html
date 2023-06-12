@@ -11,6 +11,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
 
+
+<!-- font 22 -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 
@@ -21,7 +24,7 @@
   <!-- Header section start -->
 
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-  <div class="w-full text-green-800 bg-white p-2 drop-shadow-md">
+  <div class="w-full text-green-800 bg-white p-2 drop-shadow-md font-second-style">
     <div x-data="{ open: false }"
       class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
       <div class=" flex flex-row items-center justify-between">
@@ -45,12 +48,12 @@
         <a class="px-4 py-2 mt-2 text-normal font-semibold rounded-lg  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
           href="index.html">About Us</a>
 
-        <a class="px-4 py-2 mt-2 text-normal font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+        <a class="px-4 py-2 mt-2 text-normal font-semibold bg-transparent rounded-lg   md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
           href="#">What we do</a>
 
-        <a class="px-4 py-2 mt-2 text-normal font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+        <a class="px-4 py-2 mt-2 text-normal font-semibold bg-transparent rounded-lg   md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
           href="#">Who we are</a>
-        <a class="px-4 py-2 mt-2 text-normal font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+        <a class="px-4 py-2 mt-2 text-normal font-semibold bg-transparent rounded-lg   md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
           href="#">Contact Us</a>
 
 
@@ -65,21 +68,22 @@
   <!-- hero Section  -->
 
 
-  <section class="bg-white dark:bg-gray-900 pt-20 pb-24">
+  <section class="bg-gray-50  xl:pt-16 xl:pb-20 p-8">
     <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
       <div class="mr-auto place-self-center lg:col-span-7">
         <h1
-          class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+          class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl ">
           Lorem ipsum dolor sit amet consectetur.</h1>
-        <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Lorem, ipsum
+        <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl ">Lorem, ipsum
           dolor sit amet consectetur adipisicing elit. Eligendi harum, cupiditate numquam labore deserunt incidunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime laudantium laborum consequatur amet nesciunt temporibus.</p>
         <a href="#"
-          class="inline-flex items-center justify-center px-5 py-3 text-xl font-medium text-center bg-lime-300 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+          class="inline-flex items-center justify-center px-5 py-3 text-xl font-medium text-center header-back-colr text-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-black hover:border-lime-600 focus:ring-4 focus:ring-gray-100  ">
           Get started →
         </a>
         <a href="#"
-          class="inline-flex items-center justify-center px-5 py-3 text-xl font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
-          Button2
+        class="inline-flex items-center justify-center px-5 py-3 text-xl font-medium text-center header-back-colr text-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-black hover:border-lime-600 focus:ring-4 focus:ring-gray-100  ">
+        Button 2
+      </a>
         </a>
       </div>
 
@@ -135,109 +139,33 @@
         </div>
         
       </div>
-
-
-
-
-
-
-
     </div>
   </section>
 
-  <!-- ******************* -->
-  <!-- <section class="p-8">
-    <div class="carousel bg-gray-500 relative container mx-auto" style="max-width:1600px;">
-      <div class="carousel-inner relative overflow-hidden w-full">
-        Slide 1
-        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
-          checked="checked">
-        <div class="carousel-item absolute opacity-0" style="height:80vh;">
-          <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right"
-            style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK2MM7e2dKphHbiSkEto6R7ajlwY7HN6U33hWoQsjz&s ">
-
-         
-
-          </div>
-        </div>
-
-        <label for="carousel-3"
-          class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-        <label for="carousel-2"
-          class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
-
-        Slide 2
-        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-        <div class="carousel-item absolute opacity-0 bg-cover bg-right" style="height:80vh;">
-          <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right"
-            style="background-image: url('https://upload.wikimedia.org/wikipedia/en/f/f8/Dummy_Title_Card.jpeg')">
-
-          </div>
-        </div>
-        <label for="carousel-1"
-          class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-        <label for="carousel-3"
-          class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
-
-        Slide 3
-        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-        <div class="carousel-item absolute opacity-0" style="height:80vh;">
-          <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-center"
-            style="background-image: url('https://katapopuler.com/wp-content/uploads/2020/11/dummy.png');">
-
-
-
-          </div>
-        </div>
-        <label for="carousel-2"
-          class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-        <label for="carousel-1"
-          class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
-
-        slide indicators
-        <ol class="carousel-indicators">
-          <li class="inline-block mr-3">
-            <label for="carousel-1"
-              class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
-          </li>
-          <li class="inline-block mr-3">
-            <label for="carousel-2"
-              class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
-          </li>
-          <li class="inline-block mr-3">
-            <label for="carousel-3"
-              class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
-          </li>
-        </ol>
-
-      </div>
-    </div>
-  </section>
-  -->
- 
+  
 
 
 
   <!-- ******************* -->
 
-  <section class="p-6">
+  <!-- <section class="">
 
-    <div class="bg-gray-50 text-gray-800 lg:text-left">
-      <div class="container mx-auto xl:px-32">
+    <div class="bg-white text-gray-800 lg:text-left">
+      <div class="container mx-auto xl:px-16 xl:py-12 p-8">
         <div class="flex justify-center">
 
           <div class="lg:mt-0">
-            <h1 class="text-3xl font-semibold text-black capitalize lg:text-4xl dark:text-white p-2 text-center">
+            <h1 class="text-3xl font-semibold text-black capitalize lg:text-4xl  p-2 text-center">
               About Us
             </h1>
-            <p class="max-w-5xl text-black font-semibold lg:text-lg text-base  p-2">
+            <p class="max-w-6xl text-gray-900 font-semibold lg:text-lg text-base  p-2">
               The trust operates on zero administrative costs and distributes all donations directly to
               the cause they were raised for. Only when there is a need there is a budget as financial
               resources are connected to a purpose. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat iure beatae delectus animi mollitia non placeat molestiae, natus obcaecati exercitationem enim quisquam corrupti dolorem voluptas.
             </p>
 
 
-             <p class="max-w-5xl text-black font-semibold lg:text-lg text-base  p-2">
+             <p class="max-w-6xl text-gray-900 font-semibold lg:text-lg text-base  p-2">
               The trust operates on zero administrative costs and distributes all donations directly to
               the cause they were raised for. Only when there is a need there is a budget as financial
               resources are connected to a purpose. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat iure beatae delectus animi mollitia non placeat molestiae, natus obcaecati exercitationem enim quisquam corrupti dolorem voluptas.
@@ -247,12 +175,143 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <!--Container-->
-  <div class="container shadow-lg mx-auto bg-white mt-24 md:mt-18">
+  <!-- About section  -->
+  <div class="bg-white px-6 xl:px-16 xl:py-12 p-8">
+    <div class="mx-auto max-w-5xl ">
+      <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl text-center">About US</h2>
+      <p class="mt-6 text-lg leading-8 text-gray-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus deserunt dolorum numquam molestiae animi commodi! Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+
+         <p class="mt-6 text-lg leading-8 text-gray-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, porro nostrum temporibus, omnis ducimus ipsa qui, quisquam aut fugit similique quas? Quae dignissimos iure accusamus! Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+
+    </div>
+  </div>
+  
+  <!-- About section end  -->
+
+<!-- mission vision section   -->
+<div class="bg-gray-50 px-6 xl:px-16 xl:py-12 p-8 ">
+  <div class="mx-auto max-w-8xl lg:px-6 lg:px-8">
+    <div class="mx-auto max-w-5xl lg:text-center">
+      <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Lorem ipsum dolor sit amet consectetur.</p>
+      <p class="mt-6 text-lg leading-8 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam vero obcaecati in reprehenderit similique magnam! Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.</p>
+    </div>
+    <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+
+
+        <div class="relative p-4 lg:p-8 xl:p-12 bg-gray-100">
+          <dt class="text-base font-semibold leading-7 text-gray-900">
+            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg ">
+           <!-- <img src="public/Img/Mission-img.png" alt="mission-img"> -->
+            </div>
+            <!-- Push to deploy -->
+            <p class="p-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center">Mission</p>
+
+          </dt>
+          <img src="https://img.freepik.com/free-vector/business-vision-concept-illustration_114360-7130.jpg" alt="mission-img">
+
+          <dd class="mt-2 text-base leading-7 text-gray-600">Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.</dd>
+        </div>
+
+
+        <div class="relative p-4 lg:p-8 xl:p-12 bg-gray-100">
+          <dt class="text-base font-semibold leading-7 text-gray-900">
+            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg ">
+              <!-- <img src="public/Img/Vision-img.png" alt="vision-img"> -->
+            </div>
+            <p class="p-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center">Vision</p>
+
+            <!-- SSL certificates -->
+          </dt>
+          <img src="https://img.freepik.com/free-vector/business-vision-concept-illustration_114360-7130.jpg" alt="vision-img">
+
+          <dd class="mt-2 text-base leading-7 text-gray-600">Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.</dd>
+        </div>
+        
+        
+      </dl>
+    </div>
+  </div>
+</div>
+
+<!-- mission vision section   -->
+
+
+
+<!--
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/aspect-ratio'),
+    ],
+  }
+  ```
+-->
+<div class="bg-white">
+  <div class="mx-auto max-w-7xl py-24 sm:px-2 sm:py-32 lg:px-4">
+    <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl text-center p-4 lg:mb-8">Products List</h2>
+<!-- 1111111111 -->
+    <div class="mx-auto max-w-2xl px-4 lg:max-w-none p-4 mb-4 bg-gray-100">
+      <div class="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
+        <div>
+          <h2 class="text-4xl font-bold tracking-tight text-gray-900">We built our business on great customer service</h2>
+          <p class="mt-4 text-gray-500">At the beginning at least, but then we realized we could make a lot more money if we kinda stopped caring about that. Our new strategy is to write a bunch of things that look really good in the headlines, then clarify in the small print but hope people don't actually read it.</p>
+        </div>
+        <div class="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">
+          <img src="https://tailwindui.com/img/ecommerce-images/incentives-07-hero.jpg" alt="" class="object-cover object-center">
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- 222222  -->
+    <div class="mx-auto max-w-2xl px-4 lg:max-w-none p-4 mb-4 bg-gray-100">
+      <div class="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
+        <div class="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">
+          <img src="https://tailwindui.com/img/ecommerce-images/incentives-07-hero.jpg" alt="" class="object-cover object-center">
+        </div>
+        <div>
+          <h2 class="text-4xl font-bold tracking-tight text-gray-900">We built our business on great customer service</h2>
+          <p class="mt-4 text-gray-500">At the beginning at least, but then we realized we could make a lot more money if we kinda stopped caring about that. Our new strategy is to write a bunch of things that look really good in the headlines, then clarify in the small print but hope people don't actually read it.</p>
+        </div>
+      </div>
+    </div>
+<!-- 33333 -->
+    <div class="mx-auto max-w-2xl px-4 lg:max-w-none p-4 mb-4 bg-gray-100">
+      <div class="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
+        <div>
+          <h2 class="text-4xl font-bold tracking-tight text-gray-900">We built our business on great customer service</h2>
+          <p class="mt-4 text-gray-500">At the beginning at least, but then we realized we could make a lot more money if we kinda stopped caring about that. Our new strategy is to write a bunch of things that look really good in the headlines, then clarify in the small print but hope people don't actually read it.</p>
+        </div>
+        <div class="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">
+          <img src="https://tailwindui.com/img/ecommerce-images/incentives-07-hero.jpg" alt="" class="object-cover object-center">
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- 44444 -->
+    <div class="mx-auto max-w-2xl px-4 lg:max-w-none p-4 mb-4 bg-gray-100">
+      <div class="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
+        <div class="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">
+          <img src="https://tailwindui.com/img/ecommerce-images/incentives-07-hero.jpg" alt="" class="object-cover object-center">
+        </div>
+        <div>
+          <h2 class="text-4xl font-bold tracking-tight text-gray-900">We built our business on great customer service</h2>
+          <p class="mt-4 text-gray-500">At the beginning at least, but then we realized we could make a lot more money if we kinda stopped caring about that. Our new strategy is to write a bunch of things that look really good in the headlines, then clarify in the small print but hope people don't actually read it.</p>
+        </div>
+      </div>
+    </div>
 
   </div>
+</div>
 
 
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>

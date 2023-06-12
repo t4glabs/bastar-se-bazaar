@@ -54,9 +54,19 @@
   font-family: 'Nunito Sans', sans-serif;
 }
 
-.back-img {
+
+.font-second-style{
+  font-family: 'Roboto', sans-serif;
+}
+
+.header-back-colr{
+  background-color: #166534;
+}
+
+
+/* .back-img {
   background: url('https://eco-villaage.github.io/images/banner-bg.svg');
 
   background-color: #008000;
   padding-top: 86px;
-}
+} */
