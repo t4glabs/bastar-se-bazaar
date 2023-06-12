@@ -5,16 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="output.css" rel="stylesheet">
+
+  <!-- font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+
 </head>
 
-<body class="bg-stone-50 font-sans leading-normal tracking-normal font-serif">
+
+<body class="font-style bg-stone-50 font-sans leading-normal tracking-normal font-serif">
 
 
 
   <!-- Header section start -->
 
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-  <div class="w-full text-green-800 bg-white p-4 drop-shadow-md">
+  <div class="w-full text-green-800 bg-white p-2 drop-shadow-md">
     <div x-data="{ open: false }"
       class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
       <div class=" flex flex-row items-center justify-between">
@@ -51,21 +58,21 @@
     </div>
   </div>
   <!-- Header section end -->
-  <!-- ******************* -->
+
 
 
 
   <!-- hero Section  -->
 
 
-  <section class="bg-white dark:bg-gray-900 pt-32 pb-20">
+  <section class="bg-white dark:bg-gray-900 pt-20 pb-24">
     <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
       <div class="mr-auto place-self-center lg:col-span-7">
         <h1
           class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
           Lorem ipsum dolor sit amet consectetur.</h1>
         <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Lorem, ipsum
-          dolor sit amet consectetur adipisicing elit. Eligendi harum, cupiditate numquam labore deserunt incidunt!</p>
+          dolor sit amet consectetur adipisicing elit. Eligendi harum, cupiditate numquam labore deserunt incidunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime laudantium laborum consequatur amet nesciunt temporibus.</p>
         <a href="#"
           class="inline-flex items-center justify-center px-5 py-3 text-xl font-medium text-center bg-lime-300 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
           Get started →
@@ -76,25 +83,80 @@
         </a>
       </div>
 
+
+
+
+
       <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-        <img src="https://cdn.pixabay.com/photo/2016/09/21/04/46/barley-field-1684052_1280.jpg" alt="mockup">
+        <!-- <img src="https://cdn.pixabay.com/photo/2016/09/21/04/46/barley-field-1684052_1280.jpg" alt="mockup"> -->
+
+        <div class="lg:mb-0 sm:place-self-center">
+          <div class="flex flex-col container mx-auto bg-white shadow-2xl rounded my-10 rounded-lg"
+            style="max-width:500px;">
+
+            <!-- section 1 div 1 carousel 1 -->
+            <div class="flex items-center justify-center bg-gray-500 relative container mx-auto"
+              style="max-width:1600px;">
+              <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
+                <!-- slides -->
+                <div class="carousel">
+                  <div x-show="activeSlide === 0" class="carousel-item">
+                    <img class="w-full" src="https://picsum.photos/536/354" alt="Image 1">
+                  </div>
+                  <div x-show="activeSlide === 1" class="carousel-item">
+                    <img class="w-full h-full" src="https://picsum.photos/seed/picsum/536/354" alt="Image 2">
+                  </div>
+                  <div x-show="activeSlide === 2" class="carousel-item">
+                    <img class="w-full h-full" src="https://picsum.photos/id/1060/536/354?blur=2" alt="Image 3">
+                  </div>
+
+                </div>
+                <!-- controllers -->
+                <div class="carousel-controls">
+                  <button @click="activeSlide = (activeSlide - 1 + 3) % 3"
+                    class="carousel-control-prev w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">
+                    ‹
+                  </button>
+                  <button @click="activeSlide = (activeSlide + 1) % 3"
+                    class="carousel-control-next w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">
+                    ›
+                  </button>
+                </div>
+                <!-- indicators -->
+                <div class="carousel-indicators mt-2 flex justify-center">
+                  <template x-for="(slide, index) in 3">
+                    <button @click="activeSlide = index" :class="{'active': activeSlide === index}"
+                      class="carousel-indicator text-4xl text-gray-400 hover:text-gray-900">•</button>
+                  </template>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
       </div>
+
+
+
+
+
+
+
     </div>
   </section>
 
   <!-- ******************* -->
-  <section class="p-8">
+  <!-- <section class="p-8">
     <div class="carousel bg-gray-500 relative container mx-auto" style="max-width:1600px;">
       <div class="carousel-inner relative overflow-hidden w-full">
-        <!--Slide 1-->
+        Slide 1
         <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
           checked="checked">
         <div class="carousel-item absolute opacity-0" style="height:80vh;">
           <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right"
-            style="background-image: url('https://images.unsplash.com/photo-1532581140115-3e355d1ed1de?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzMzcwMDYyNw&ixlib=rb-1.2.1&q=85;  ">
+            style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK2MM7e2dKphHbiSkEto6R7ajlwY7HN6U33hWoQsjz&s ">
 
-            <!--  add any content in this box  -->
-            <!-- <div class="container mx-auto">    </div>  -->
+         
 
           </div>
         </div>
@@ -104,11 +166,11 @@
         <label for="carousel-2"
           class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
 
-        <!--Slide 2-->
+        Slide 2
         <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
         <div class="carousel-item absolute opacity-0 bg-cover bg-right" style="height:80vh;">
           <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right"
-            style="background-image: url(https://images.unsplash.com/photo-1617434108848-6a1e827124ef?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzMzcxODE3MA&ixlib=rb-1.2.1&q=85)">
+            style="background-image: url('https://upload.wikimedia.org/wikipedia/en/f/f8/Dummy_Title_Card.jpeg')">
 
           </div>
         </div>
@@ -117,11 +179,11 @@
         <label for="carousel-3"
           class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
 
-        <!--Slide 3-->
+        Slide 3
         <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
         <div class="carousel-item absolute opacity-0" style="height:80vh;">
           <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-center"
-            style="background-image: url('https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzMzcwMDk1NA&ixlib=rb-1.2.1&q=85);">
+            style="background-image: url('https://katapopuler.com/wp-content/uploads/2020/11/dummy.png');">
 
 
 
@@ -132,7 +194,7 @@
         <label for="carousel-1"
           class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
 
-        <!-- slide indicators -->
+        slide indicators
         <ol class="carousel-indicators">
           <li class="inline-block mr-3">
             <label for="carousel-1"
@@ -151,7 +213,8 @@
       </div>
     </div>
   </section>
-
+  -->
+ 
 
 
 
@@ -167,11 +230,19 @@
             <h1 class="text-3xl font-semibold text-black capitalize lg:text-4xl dark:text-white p-2 text-center">
               About Us
             </h1>
-            <p class="max-w-5xl font-light text-black font-thin md:text-lg lg:text-base dark:text-gray-400 p-2">
+            <p class="max-w-5xl text-black font-semibold lg:text-lg text-base  p-2">
               The trust operates on zero administrative costs and distributes all donations directly to
               the cause they were raised for. Only when there is a need there is a budget as financial
-              resources are connected to a purpose.
+              resources are connected to a purpose. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat iure beatae delectus animi mollitia non placeat molestiae, natus obcaecati exercitationem enim quisquam corrupti dolorem voluptas.
             </p>
+
+
+             <p class="max-w-5xl text-black font-semibold lg:text-lg text-base  p-2">
+              The trust operates on zero administrative costs and distributes all donations directly to
+              the cause they were raised for. Only when there is a need there is a budget as financial
+              resources are connected to a purpose. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat iure beatae delectus animi mollitia non placeat molestiae, natus obcaecati exercitationem enim quisquam corrupti dolorem voluptas.
+            </p>
+            
           </div>
         </div>
       </div>
@@ -183,6 +254,8 @@
 
   </div>
 
+
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
   <script src="index.js"></script>
 
 </body>
