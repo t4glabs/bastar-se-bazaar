@@ -50,23 +50,45 @@
 /* CUSTOM CSS SECTION END */
 
 
-.font-style {
+.font-family-class{
+  /* font-family: 'Lato', sans-serif; */
   font-family: 'Nunito Sans', sans-serif;
-}
-
-
-.font-second-style{
-  font-family: 'Roboto', sans-serif;
 }
 
 .header-back-colr{
   background-color: #166534;
 }
 
+.text-hover-class:hover{
+color: #166534;
+}
 
-/* .back-img {
-  background: url('https://eco-villaage.github.io/images/banner-bg.svg');
+.logo-size{
+  height: 90px;
+}
 
-  background-color: #008000;
-  padding-top: 86px;
-} */
+.back{
+  background: url('https://media.istockphoto.com/id/1082411378/photo/magical-fairytale-forest.jpg?s=612x612&w=0&k=20&c=3iw53YdeeFEqRuxcUL0UCQZUMJ3e2IRtUfvgSjAysjQ=');
+}
+
+.mission-vision{
+  height: 100px;
+  width: 100px;
+}
+
+.body-color-website{
+  background-color: #fff;;
+}
+
+
+.size{
+  height: 20%;
+}
+
+.team-img-size{
+  width: 80%;
+}
+
+.footer-back-color{
+  background-color: rgb(241, 226, 212);
+}

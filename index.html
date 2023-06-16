@@ -6,34 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="output.css" rel="stylesheet">
 
-  <!-- font  -->
+
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
 
-
-<!-- font 22 -->
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 
-<body class="font-style bg-stone-50 font-sans leading-normal tracking-normal font-serif">
+<body class="font-family-class body-color-website font-sans leading-normal tracking-normal font-serif ">
 
 
 
   <!-- Header section start -->
 
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-  <div class="w-full text-green-800 bg-white p-2 drop-shadow-md font-second-style">
+
+  <div class="w-full text-gray-300 bg-white drop-shadow-md font-family-class">
     <div x-data="{ open: false }"
-      class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-      <div class=" flex flex-row items-center justify-between">
-        <a href="#"
-          class="text-lg font-semibold tracking-widest text-white uppercase rounded-lg focus:outline-none focus:shadow-outline">
-          <img src="public/Img/LOGO_ FOREST NATURALS.png" alt="logo Img" class="w-60 h-20">
+      class="p-2 flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+      <div class="flex flex-row items-center justify-between">
+        <a href="index.html">
+          <img src="public/Img/logo.png" alt="logo" class="logo-size">
         </a>
+
         <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
-          <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+          <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6 text-emerald-700">
             <path x-show="!open" fill-rule="evenodd"
               d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
               clip-rule="evenodd"></path>
@@ -45,18 +44,19 @@
       </div>
       <nav :class="{'flex': open, 'hidden': !open}"
         class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
-        <a class="px-4 py-2 mt-2 text-normal font-semibold rounded-lg  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-          href="index.html">About Us</a>
-
-        <a class="px-4 py-2 mt-2 text-normal font-semibold bg-transparent rounded-lg   md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-          href="#">What we do</a>
-
-        <a class="px-4 py-2 mt-2 text-normal font-semibold bg-transparent rounded-lg   md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-          href="#">Who we are</a>
-        <a class="px-4 py-2 mt-2 text-normal font-semibold bg-transparent rounded-lg   md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-          href="#">Contact Us</a>
+        <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-emerald-700  hover:bg-gray-100 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+          href="index.html">Home</a>
 
 
+
+        <a class="text-black px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-emerald-700  hover:bg-gray-100    md:mt-0 md:ml-4  focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+          href="#about">About Us</a>
+        <a class="text-black px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-emerald-700  hover:bg-gray-100    md:mt-0 md:ml-4  focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+          href="#">Our Work</a>
+        <a class="text-black px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-emerald-700  hover:bg-gray-100    md:mt-0 md:ml-4  focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+          href="#">Team</a>
+        <a class="text-black px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-emerald-700  hover:bg-gray-100     md:mt-0 md:ml-4  focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+          href="#">Our Products</a>
       </nav>
     </div>
   </div>
@@ -67,42 +67,47 @@
 
   <!-- hero Section  -->
 
-
-  <section class="bg-gray-50  xl:pt-16 xl:pb-20 p-8">
+  <!-- 
+  <section class=" bg-green-50  xl:pt-16 xl:pb-20 p-8">
     <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
       <div class="mr-auto place-self-center lg:col-span-7">
-        <h1
-          class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl ">
-          Lorem ipsum dolor sit amet consectetur.</h1>
-        <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl ">Lorem, ipsum
-          dolor sit amet consectetur adipisicing elit. Eligendi harum, cupiditate numquam labore deserunt incidunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime laudantium laborum consequatur amet nesciunt temporibus.</p>
-        <a href="#"
-          class="inline-flex items-center justify-center px-5 py-3 text-xl font-medium text-center header-back-colr text-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-black hover:border-lime-600 focus:ring-4 focus:ring-gray-100  ">
+        <h1 class="max-w-2xl mb-4 text-3xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-5xl ">
+          Bastar Se Bazar Tak 🌱</h1>
+        <p class="max-w-2xl mb-6 font-light text-gray-700 lg:mb-8 md:text-lg lg:text-xl ">Welcome to Forest Naturals
+          powered by Bastar Se Bazaar Tak Private Limited, on a mission to uplift the lives of tribal farmers in India's
+          most densely forested state, Chhattisgarh. We are the champions of the 'Everyman,' the tribal farmers who are
+          the backbone of our society, yet often face struggles and challenges that go unnoticed.</p>
+         
+            <a href="#"
+          class=" inline-flex items-center justify-center lg:px-4 lg:py-3 p-2 text-xl font-medium text-center header-back-colr text-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-black hover:border-lime-600 focus:ring-4 focus:ring-gray-100  ">
           Get started →
         </a>
+          
+        
         <a href="#"
-        class="inline-flex items-center justify-center px-5 py-3 text-xl font-medium text-center header-back-colr text-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-black hover:border-lime-600 focus:ring-4 focus:ring-gray-100  ">
-        Button 2
-      </a>
+          class="inline-flex items-center justify-center lg:px-4 lg:py-3 p-2 text-xl font-medium text-center header-back-colr text-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-black hover:border-lime-600 focus:ring-4 focus:ring-gray-100  ">
+          Button 2
+        </a>
+       
         </a>
       </div>
 
 
-
-
-
-      <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-        <!-- <img src="https://cdn.pixabay.com/photo/2016/09/21/04/46/barley-field-1684052_1280.jpg" alt="mockup"> -->
+      <div class="hidden lg:mt-8 lg:col-span-5 lg:flex">
 
         <div class="lg:mb-0 sm:place-self-center">
           <div class="flex flex-col container mx-auto bg-white shadow-2xl rounded my-10 rounded-lg"
             style="max-width:500px;">
 
-            <!-- section 1 div 1 carousel 1 -->
+
+
+
             <div class="flex items-center justify-center bg-gray-500 relative container mx-auto"
               style="max-width:1600px;">
               <div x-data="{ activeSlide: 0 }" class="relative overflow-hidden w-full">
-                <!-- slides -->
+
+
+
                 <div class="carousel">
                   <div x-show="activeSlide === 0" class="carousel-item">
                     <img class="w-full" src="https://picsum.photos/536/354" alt="Image 1">
@@ -115,7 +120,10 @@
                   </div>
 
                 </div>
-                <!-- controllers -->
+
+
+
+
                 <div class="carousel-controls">
                   <button @click="activeSlide = (activeSlide - 1 + 3) % 3"
                     class="carousel-control-prev w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">
@@ -126,7 +134,9 @@
                     ›
                   </button>
                 </div>
-                <!-- indicators -->
+
+
+
                 <div class="carousel-indicators mt-2 flex justify-center">
                   <template x-for="(slide, index) in 3">
                     <button @click="activeSlide = index" :class="{'active': activeSlide === index}"
@@ -137,181 +147,338 @@
             </div>
           </div>
         </div>
-        
-      </div>
-    </div>
-  </section>
 
-  
-
-
-
-  <!-- ******************* -->
-
-  <!-- <section class="">
-
-    <div class="bg-white text-gray-800 lg:text-left">
-      <div class="container mx-auto xl:px-16 xl:py-12 p-8">
-        <div class="flex justify-center">
-
-          <div class="lg:mt-0">
-            <h1 class="text-3xl font-semibold text-black capitalize lg:text-4xl  p-2 text-center">
-              About Us
-            </h1>
-            <p class="max-w-6xl text-gray-900 font-semibold lg:text-lg text-base  p-2">
-              The trust operates on zero administrative costs and distributes all donations directly to
-              the cause they were raised for. Only when there is a need there is a budget as financial
-              resources are connected to a purpose. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat iure beatae delectus animi mollitia non placeat molestiae, natus obcaecati exercitationem enim quisquam corrupti dolorem voluptas.
-            </p>
-
-
-             <p class="max-w-6xl text-gray-900 font-semibold lg:text-lg text-base  p-2">
-              The trust operates on zero administrative costs and distributes all donations directly to
-              the cause they were raised for. Only when there is a need there is a budget as financial
-              resources are connected to a purpose. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat iure beatae delectus animi mollitia non placeat molestiae, natus obcaecati exercitationem enim quisquam corrupti dolorem voluptas.
-            </p>
-            
-          </div>
-        </div>
       </div>
     </div>
   </section> -->
 
-  <!-- About section  -->
-  <div class="bg-white px-6 xl:px-16 xl:py-12 p-8">
-    <div class="mx-auto max-w-5xl ">
-      <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl text-center">About US</h2>
-      <p class="mt-6 text-lg leading-8 text-gray-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus deserunt dolorum numquam molestiae animi commodi! Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
 
-         <p class="mt-6 text-lg leading-8 text-gray-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, porro nostrum temporibus, omnis ducimus ipsa qui, quisquam aut fugit similique quas? Quae dignissimos iure accusamus! Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+
+
+
+
+
+  <!-- Jumbotron -->
+  <div class="overflow-hidden bg-cover bg-no-repeat" style="
+  background-position: 50%;
+  background-image: url('https://media.istockphoto.com/id/503646746/photo/farmer-spreading-fertilizer-in-the-field-wheat.jpg?s=612x612&w=0&k=20&c=Lgxsjbz0jaYyQrvfzhyAsW2zELtshRP4AtLzkpmcLiE=');
+  height: 500px;
+">
+    <div class=" top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.75)] ">
+      <div class="flex h-full items-center justify-center">
+        <div class="px-6 text-center text-white md:px-12">
+          <h1 class="mt-2 mb-16 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl">
+            Bastar Se Bazaar Tak <br /><span>Private Limited</span>
+          </h1>
+          <button type="button"
+            class="rounded border-2 border-neutral-50 px-[46px] pt-[14px] pb-[12px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-100 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200"
+            data-te-ripple-init data-te-ripple-color="light">
+            Get started
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Jumbotron -->
+  </section>
+
+  <!-- ******************* -->
+
+
+
+  <!-- Home  section  -->
+  <div class="bg-white px-6 xl:px-16 xl:py-8 p-8">
+    <div class="mx-auto max-w-5xl ">
+      <!-- <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl text-center">About US</h2> -->
+      <p class="mt-6 text-lg leading-8 text-gray-700">Our quest is to combat post-harvest losses and bridge the gap
+        between the forest and the market, bringing high-quality, unadulterated, processed forest produce to urban
+        consumers. We believe in the purity of nature and the strength of simplicity, mirroring the essence of our
+        tribal farmers.
+      </p>
+
+      <p class="mt-6 text-lg leading-8 text-gray-700">Our products are a testament to this belief - natural, pure, and
+        healthy, free from chemicals, synthetic colours, artificial flavours, or adulteration. In every bite, you taste
+        the richness of the forest, the sweat of the farmer, and the spirit of a community that refuses to give up.
+        Welcome to a journey of resilience, of triumph over adversity, and of a dream to create a healthier, more
+        sustainable world. Welcome to Forest Naturals.
+
+      </p>
 
     </div>
   </div>
-  
+  <!-- ***************** -->
+
+
+
+  <!-- About section start  -->
+
+
+
+
+
+
+
+
+  <!-- mission vision section   -->
+  <div class="bg-white px-6 xl:px-16 xl:py-12 p-8" id="about">
+    <div class="mx-auto max-w-8xl lg:px-6 lg:px-8">
+      <div class="mx-auto max-w-5xl text-center">
+        <p class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">About Us
+        </p>
+        <p class=" text-4xl font-bold tracking-tight text-emerald-700 sm:text-4xl">⎯
+        </p>
+
+        <!-- <p class="mt-2 text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl text-start mt-16">Mission & Vision
+        </p>
+        <p class="mt-6 text-lg leading-8 text-gray-700 text-start">At Forest Naturals, our mission is to improve the livelihoods of
+          tribal farmers in the Bastar region by reducing post-harvest losses and providing high-quality, unadulterated,
+          processed forest produce to urban consumers at a fair price. Our vision is to create a sustainable and
+          inclusive ecosystem that empowers tribal farmers, respects the environment, and delivers natural, wholesome
+          products to our customers.</p> -->
+      </div>
+      <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-16 lg:max-w-7xl">
+        <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-3">
+
+
+          <div class="relative p-4 lg:p-8 xl:p-12 bg-gray-100 shadow-2xl  sm:shadow-lg">
+            <dt class="text-base font-semibold leading-7 ">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg ">
+                <!-- <img src="public/Img/Mission-img.png" alt="mission-img"> -->
+              </div>
+              <!-- Push to deploy -->
+              <p class="p-2 text-3xl font-bold tracking-tight  sm:text-2xl text-start">Mission</p>
+
+            </dt>
+            <img src="https://img.freepik.com/free-vector/business-vision-concept-illustration_114360-7130.jpg"
+              alt="mission-img" class="mission-vision">
+
+            <dd class="mt-2 text-base leading-7 ">At Forest Naturals, our mission is to improve the livelihoods of
+              tribal farmers in the Bastar region by reducing post-harvest losses and providing high-quality,
+              unadulterated, processed forest produce to urban consumers at a fair price.</dd>
+          </div>
+
+
+          <div class="relative p-4 lg:p-6 xl:p-8 bg-gray-100 shadow-2xl sm:shadow-lg">
+            <dt class="text-base font-semibold leading-7 text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg ">
+                <!-- <img src="public/Img/Vision-img.png" alt="vision-img"> -->
+              </div>
+              <p class="p-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-2xl text-start">Vision</p>
+
+              <!-- SSL certificates -->
+            </dt>
+            <img src="https://img.freepik.com/free-vector/business-vision-concept-illustration_114360-7130.jpg"
+              alt="vision-img" class="mission-vision">
+
+            <dd class="mt-2 text-base leading-7">Our vision is to create a sustainable and inclusive ecosystem that
+              empowers tribal farmers, respects the environment, and delivers natural, wholesome products to our
+              customers.</dd>
+          </div>
+
+
+
+          <div class="relative p-4 lg:p-8 xl:p-12 bg-gray-100 shadow-2xl  sm:shadow-lg">
+            <dt class="text-base font-semibold leading-7 ">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg ">
+                <!-- <img src="public/Img/Mission-img.png" alt="mission-img"> -->
+              </div>
+              <!-- Push to deploy -->
+              <p class="p-2 text-3xl font-bold tracking-tight  sm:text-2xl text-start">Impact</p>
+
+            </dt>
+            <img src="https://img.freepik.com/free-vector/business-vision-concept-illustration_114360-7130.jpg"
+              alt="mission-img" class="mission-vision">
+
+            <dd class="mt-2 text-base leading-7 ">Our efforts have led to the creation of 67 jobs, two-thirds of which
+              have been filled by tribal women. We have also helped farmers adopt organic farming practices,
+              strengthening the local economy and reducing post-harvest losses.
+              .</dd>
+          </div>
+
+
+
+
+        </dl>
+      </div>
+    </div>
+  </div>
+
+  <!-- mission vision section   -->
   <!-- About section end  -->
 
-<!-- mission vision section   -->
-<div class="bg-gray-50 px-6 xl:px-16 xl:py-12 p-8 ">
-  <div class="mx-auto max-w-8xl lg:px-6 lg:px-8">
-    <div class="mx-auto max-w-5xl lg:text-center">
-      <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Lorem ipsum dolor sit amet consectetur.</p>
-      <p class="mt-6 text-lg leading-8 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam vero obcaecati in reprehenderit similique magnam! Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.</p>
-    </div>
-    <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
 
 
-        <div class="relative p-4 lg:p-8 xl:p-12 bg-gray-100">
-          <dt class="text-base font-semibold leading-7 text-gray-900">
-            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg ">
-           <!-- <img src="public/Img/Mission-img.png" alt="mission-img"> -->
-            </div>
-            <!-- Push to deploy -->
-            <p class="p-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center">Mission</p>
 
-          </dt>
-          <img src="https://img.freepik.com/free-vector/business-vision-concept-illustration_114360-7130.jpg" alt="mission-img">
-
-          <dd class="mt-2 text-base leading-7 text-gray-600">Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.</dd>
+  <div class="bg-white">
+    <div class="mx-auto max-w-7xl py-24 sm:px-2 sm:py-32 lg:px-4">
+      <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl text-center p-4 lg:mb-8">Products List</h2>
+      <!-- 1111111111 -->
+      <div class="mx-auto max-w-2xl px-4 lg:max-w-none p-4 mb-4 bg-gray-100">
+        <div class="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
+          <div>
+            <h2 class="text-4xl font-bold tracking-tight text-gray-900">We built our business on great customer service
+            </h2>
+            <p class="mt-4 text-gray-500">At the beginning at least, but then we realized we could make a lot more money
+              if we kinda stopped caring about that. Our new strategy is to write a bunch of things that look really
+              good in the headlines, then clarify in the small print but hope people don't actually read it.</p>
+          </div>
+          <div class="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">
+            <img src="https://tailwindui.com/img/ecommerce-images/incentives-07-hero.jpg" alt=""
+              class="object-cover object-center">
+          </div>
         </div>
 
+      </div>
 
-        <div class="relative p-4 lg:p-8 xl:p-12 bg-gray-100">
-          <dt class="text-base font-semibold leading-7 text-gray-900">
-            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg ">
-              <!-- <img src="public/Img/Vision-img.png" alt="vision-img"> -->
-            </div>
-            <p class="p-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center">Vision</p>
-
-            <!-- SSL certificates -->
-          </dt>
-          <img src="https://img.freepik.com/free-vector/business-vision-concept-illustration_114360-7130.jpg" alt="vision-img">
-
-          <dd class="mt-2 text-base leading-7 text-gray-600">Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.</dd>
+      <!-- 222222  -->
+      <div class="mx-auto max-w-2xl px-4 lg:max-w-none p-4 mb-4 bg-gray-100">
+        <div class="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
+          <div class="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">
+            <img src="https://tailwindui.com/img/ecommerce-images/incentives-07-hero.jpg" alt=""
+              class="object-cover object-center">
+          </div>
+          <div>
+            <h2 class="text-4xl font-bold tracking-tight text-gray-900">We built our business on great customer service
+            </h2>
+            <p class="mt-4 text-gray-500">At the beginning at least, but then we realized we could make a lot more money
+              if we kinda stopped caring about that. Our new strategy is to write a bunch of things that look really
+              good in the headlines, then clarify in the small print but hope people don't actually read it.</p>
+          </div>
         </div>
-        
-        
-      </dl>
+      </div>
+      <!-- 33333 -->
+      <div class="mx-auto max-w-2xl px-4 lg:max-w-none p-4 mb-4 bg-gray-100">
+        <div class="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
+          <div>
+            <h2 class="text-4xl font-bold tracking-tight text-gray-900">We built our business on great customer service
+            </h2>
+            <p class="mt-4 text-gray-500">At the beginning at least, but then we realized we could make a lot more money
+              if we kinda stopped caring about that. Our new strategy is to write a bunch of things that look really
+              good in the headlines, then clarify in the small print but hope people don't actually read it.</p>
+          </div>
+          <div class="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">
+            <img src="https://tailwindui.com/img/ecommerce-images/incentives-07-hero.jpg" alt=""
+              class="object-cover object-center">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 44444 -->
+      <div class="mx-auto max-w-2xl px-4 lg:max-w-none p-4 mb-4 bg-gray-100">
+        <div class="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
+          <div class="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">
+            <img src="https://tailwindui.com/img/ecommerce-images/incentives-07-hero.jpg" alt=""
+              class="object-cover object-center">
+          </div>
+          <div>
+            <h2 class="text-4xl font-bold tracking-tight text-gray-900">We built our business on great customer service
+            </h2>
+            <p class="mt-4 text-gray-500">At the beginning at least, but then we realized we could make a lot more money
+              if we kinda stopped caring about that. Our new strategy is to write a bunch of things that look really
+              good in the headlines, then clarify in the small print but hope people don't actually read it.</p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
-</div>
-
-<!-- mission vision section   -->
 
 
 
-<!--
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
--->
-<div class="bg-white">
-  <div class="mx-auto max-w-7xl py-24 sm:px-2 sm:py-32 lg:px-4">
-    <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl text-center p-4 lg:mb-8">Products List</h2>
-<!-- 1111111111 -->
-    <div class="mx-auto max-w-2xl px-4 lg:max-w-none p-4 mb-4 bg-gray-100">
-      <div class="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
-        <div>
-          <h2 class="text-4xl font-bold tracking-tight text-gray-900">We built our business on great customer service</h2>
-          <p class="mt-4 text-gray-500">At the beginning at least, but then we realized we could make a lot more money if we kinda stopped caring about that. Our new strategy is to write a bunch of things that look really good in the headlines, then clarify in the small print but hope people don't actually read it.</p>
+
+
+  <!-- footer  -->
+
+  <footer class="footer-back-color p-4" aria-labelledby="footer-heading">
+    <h2 id="footer-heading" class="sr-only">Footer</h2>
+    <div class="mx-auto max-w-7xl px-6 pb-4 sm:pt-16 lg:px-8 pt-2 lg:pt-8">
+      <div class="">
+        <h2 class="text-4xl font-bold tracking-tight text-gray-900 text-center mb-8">Contact Us
+        </h2>
+        <div class="flex flex-col lg:flex-row justify-center lg:gap-20 gap-8">
+
+          <!-- 1111 -->
+          <div class="mt-2 xl:mt-0 max-w-xl">
+            <h3 class="text-lg font-semibold leading-6 text-color">Lorem ipsum dolor sit amet.</h3>
+            <p class="mt-2 text-baseleading-6 text-black font-family-class">Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Dicta blanditiis ullam inventore! Lorem ipsum dolor sit amet consectetur adipisicing
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos.</p>
+
+          </div>
+
+          <!-- 22222 -->
+          <div class="mt-2 xl:mt-0">
+            <p class="mt-2 text-baseleading-6 text-black font-family-class">
+              #150, Haresh Kumar Kashyap Colony Lane, Village Lakhanpuri, Uttar Bastar, Chhattisgarh 494336
+            </p>
+            <p class="mt-2 text-baseleading-6 text-black font-family-class">Email: bastar44@outlook.com</p>
+            <p class="mt-2 text-baseleading-6 text-black font-family-class"> Mobile: +91 9604444496, 90097480687
+            </p>
+
+
+          </div>
         </div>
-        <div class="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">
-          <img src="https://tailwindui.com/img/ecommerce-images/incentives-07-hero.jpg" alt="" class="object-cover object-center">
-        </div>
+
+
       </div>
-      
-    </div>
+      <div class="mt-16 border-t border-black/20 pt-8 sm:mt-20 md:flex md:items-center md:justify-between lg:mt-8">
+        <div class="flex space-x-6 md:order-2">
+          <a href=" " class="text-gray-900 hover:text-sky-600">
+            <span class="sr-only">Facebook</span>
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
 
-    <!-- 222222  -->
-    <div class="mx-auto max-w-2xl px-4 lg:max-w-none p-4 mb-4 bg-gray-100">
-      <div class="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
-        <div class="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">
-          <img src="https://tailwindui.com/img/ecommerce-images/incentives-07-hero.jpg" alt="" class="object-cover object-center">
-        </div>
-        <div>
-          <h2 class="text-4xl font-bold tracking-tight text-gray-900">We built our business on great customer service</h2>
-          <p class="mt-4 text-gray-500">At the beginning at least, but then we realized we could make a lot more money if we kinda stopped caring about that. Our new strategy is to write a bunch of things that look really good in the headlines, then clarify in the small print but hope people don't actually read it.</p>
-        </div>
-      </div>
-    </div>
-<!-- 33333 -->
-    <div class="mx-auto max-w-2xl px-4 lg:max-w-none p-4 mb-4 bg-gray-100">
-      <div class="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
-        <div>
-          <h2 class="text-4xl font-bold tracking-tight text-gray-900">We built our business on great customer service</h2>
-          <p class="mt-4 text-gray-500">At the beginning at least, but then we realized we could make a lot more money if we kinda stopped caring about that. Our new strategy is to write a bunch of things that look really good in the headlines, then clarify in the small print but hope people don't actually read it.</p>
-        </div>
-        <div class="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">
-          <img src="https://tailwindui.com/img/ecommerce-images/incentives-07-hero.jpg" alt="" class="object-cover object-center">
-        </div>
-      </div>
-      
-    </div>
+          <a href=" " class="text-gray-900 hover:text-sky-600">
+            <span class="sr-only">Twitter</span>
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+            </svg>
+          </a>
 
-    <!-- 44444 -->
-    <div class="mx-auto max-w-2xl px-4 lg:max-w-none p-4 mb-4 bg-gray-100">
-      <div class="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
-        <div class="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">
-          <img src="https://tailwindui.com/img/ecommerce-images/incentives-07-hero.jpg" alt="" class="object-cover object-center">
+          <a href="" class="text-gray-900 hover:text-sky-600">
+            <span class="sr-only">YouTube</span>
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
         </div>
         <div>
-          <h2 class="text-4xl font-bold tracking-tight text-gray-900">We built our business on great customer service</h2>
-          <p class="mt-4 text-gray-500">At the beginning at least, but then we realized we could make a lot more money if we kinda stopped caring about that. Our new strategy is to write a bunch of things that look really good in the headlines, then clarify in the small print but hope people don't actually read it.</p>
+
+          <p class="mt-12 text-base leading-5  md:order-1 md:mt-0 text-black font-family-class font-bold mb-4">
+
+            © 2023 Forest Naturals. All rights reserved
+            <a href="" target="_blank" class="li-text-color  hover:text-emerald-700 hover:underline">Privacy Policy</a> |
+            <a href="" class="li-text-color  hover:text-emerald-700 hover:underline"> Terms of Use</a>
+            </a>
+          </p>
+
+
+
+          <p class="mt-12 text-sm leading-5  md:order-1 md:mt-0 text-black font-family-class">
+            built with 💚 by <a href="https://t4glabs.discourse.group/u?cards=yes&group=Tech4Good-Fellows"
+              target="_blank" class="li-text-color  hover:text-emerald-700 hover:underline">Tech4Good Fellows</a> &
+            Hosted Freely on <a href="https://t4glabs.github.io/bastar-se-bazaar/"
+              class="li-text-color  hover:text-emerald-700 hover:underline">Github Pages</a>
+            </a>
+          </p>
         </div>
       </div>
     </div>
+  </footer>
 
-  </div>
-</div>
+
+
+
+
+
 
 
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
