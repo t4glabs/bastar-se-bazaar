@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="output.css" rel="stylesheet">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet"> -->
+
+
+</head>
+
+
+<body class="font-family-class body-color-website font-sans leading-normal tracking-normal font-serif ">
+
+
+
+    <!-- Header section start -->
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+    <div class="w-full text-gray-300 bg-white drop-shadow-md font-family-class">
+        <div x-data="{ open: false }"
+            class="p-2 flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+            <div class="flex flex-row items-center justify-between">
+                <a href="index.html">
+                    <img src="public/Img/LOGO_ FOREST NATURALS.png" alt="logo" class="logo-size">
+                </a>
+
+                <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+                    <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6 text-emerald-700">
+                        <path x-show="!open" fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                        <path x-show="open" fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav :class="{'flex': open, 'hidden': !open}"
+                class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+                <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-emerald-700  hover:bg-gray-100 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="index.html">Home</a>
+
+
+
+                <a class="text-black px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-emerald-700  hover:bg-gray-100    md:mt-0 md:ml-4  focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="#about">About Us</a>
+                <a class="text-black px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-emerald-700  hover:bg-gray-100    md:mt-0 md:ml-4  focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="#">Our Work</a>
+                <a class="text-black px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-emerald-700  hover:bg-gray-100    md:mt-0 md:ml-4  focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="team.html">Team</a>
+                <a class="text-black px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-emerald-700  hover:bg-gray-100     md:mt-0 md:ml-4  focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="our-product.html">Our Products</a>
+            </nav>
+        </div>
+    </div>
+    <p class="size bg-green-700"></p>
+
+    <!-- Header section end -->
+
+
+
+
+    <div class="carousel relative shadow-2xl bg-white">
+        <div class="carousel-inner relative overflow-hidden w-full">
+            <!--Slide 1-->
+            <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
+                checked="checked">
+            <div class="carousel-item absolute opacity-0" style="height:80vh;">
+                <img src="public/our-work-img/PROCESSING WORKS 2.jpg" alt="">
+            </div>
+            <label for="carousel-3"
+                class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-green-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+            <label for="carousel-2"
+                class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-green-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+            <!--Slide 2-->
+            <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item absolute opacity-0" style="height:80vh;">
+                <img src="public/our-work-img/COLLECTION CENTER 3 1.png" alt="">
+                <!-- <div class="block h-full w-full bg-orange-500 text-white text-5xl text-center">Slide 2</div> -->
+            </div>
+            <label for="carousel-1"
+                class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-green-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+            <label for="carousel-3"
+                class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-green-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+            <!--Slide 3-->
+            <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item absolute opacity-0" style="height:80vh;">
+                <img src="public/our-work-img/PROCESSING WORKS.jpg" alt="">
+            </div>
+            <label for="carousel-2"
+                class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-green-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+            <label for="carousel-1"
+                class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-green-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+            <!-- Add additional indicators for each slide-->
+            <ol class="carousel-indicators">
+                <li class="inline-block mr-3">
+                    <label for="carousel-1"
+                        class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                </li>
+                <li class="inline-block mr-3">
+                    <label for="carousel-2"
+                        class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                </li>
+                <li class="inline-block mr-3">
+                    <label for="carousel-3"
+                        class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                </li>
+            </ol>
+
+        </div>
+    </div>
+
+
+
+    
+
+    <!-- footer  -->
+    <footer class="bg-gray-100" aria-labelledby="footer-heading">
+        <h2 id="footer-heading" class="sr-only">Footer</h2>
+        <div class="mx-auto max-w-7xl px-6 pb-4 sm:pt-4 lg:px-8 pt-2 lg:pt-8">
+            <div class="">
+
+                <div class="flex flex-col lg:flex-row justify-center lg:gap-20 gap-8">
+
+                    <!-- 1111 -->
+                    <div class="mt-2 xl:mt-0 max-w-xl">
+                        <h3 class="text-lg font-bold leading-6 text-gray-700">Get Involved
+                        </h3>
+                        <p class="mt-2 text-baseleading-6 text-gray-500 font-family-class font-size-width">Join us in
+                            our mission to
+                            enhance the livelihoods of tribal farmers. There are several ways you can get involved, from
+                            volunteering
+                            and internships to donations and partnerships. Contact us to learn more.</p>
+
+                        <p class="mt-4"><a href="Privacy-Policy.html" target="_blank"
+                                class="text-emerald-700  hover:text-emerald-900 hover:underline">Privacy Policy</a></p>
+                        <p class=""> <a href="Terms-of-Use.html"
+                                class="text-emerald-700  hover:text-emerald-900 hover:underline">
+                                Terms of
+                                Use</a>
+                        </p>
+                    </div>
+
+                    <!-- 22222 -->
+                    <div class="mt-2 xl:mt-0">
+                        <h3 class="text-lg font-bold leading-6 text-gray-700">Registered office: </h3>
+                        <h3 class="text-lg font-bold leading-6 text-gray-700">Bastar Se Bazaar Tak Private Limited </h3>
+
+
+                        <p class="mt-2 text-baseleading-6 text-gray-500 font-family-class">
+                            #150, Haresh Kumar Kashyap Colony Lane, Village Lakhanpuri, Uttar Bastar, Chhattisgarh
+                            494336
+                        </p>
+                        <p class="mt-2 text-baseleading-6 text-gray-500 font-family-class">Email: bastar44@outlook.com
+                        </p>
+                        <p class="mt-2 text-baseleading-6 text-gray-500 font-family-class"> Mobile: +91 9604444496,
+                            90097480687
+                        </p>
+                        <a href=" " class="text-gray-500 hover:text-emerald-700">
+                            <span class="sr-only">Facebook</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div
+            class="p-2 border-t border-black/20 pt-8 sm:mt-4 md:flex md:items-center md:justify-between lg:mt-2 items-center flex-col bg-green-700">
+            <p class=" text-base leading-5  md:order-1 md:mt-0 text-gray-200 font-family-class font-bold mb-2">
+
+                © 2023 Forest Naturals. All rights reserved
+
+            </p>
+
+            <p class="text-sm leading-5  md:order-1 md:mt-0 text-gray-200 font-family-class font-bold mb-2">
+                built with 💚 by <a href="https://t4glabs.discourse.group/u?cards=yes&group=Tech4Good-Fellows"
+                    target="_blank" class="text-gray-200  hover:text-emerald-200 hover:underline">Tech4Good Fellows</a>
+                &
+                Hosted Freely on <a href="https://t4glabs.github.io/bastar-se-bazaar/"
+                    class="text-gray-200  hover:text-emerald-200 hover:underline">Github Pages</a>
+                </a>
+            </p>
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
