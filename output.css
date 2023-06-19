@@ -1294,11 +1294,6 @@ video {
 
 /* swipe Css  */
 
-html,
-    body {
-  height: 100%;
-}
-
 body {
   color: #000;
   margin: 0;
