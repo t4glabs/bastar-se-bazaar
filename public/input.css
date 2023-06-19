@@ -129,7 +129,11 @@ color: #166534;
 
 /* swipe Css  */
 
-
+html,
+    body {
+      /* position: relative; */
+      height: 100%;
+    }
 
     body {
   
