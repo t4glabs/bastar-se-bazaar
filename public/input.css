@@ -112,3 +112,16 @@ color: #166534;
 .team-width{
   width: 450px;
 }
+
+
+
+@media only screen and (max-width: 865px) {
+  .work-img{
+    height: 100%;
+  }
+}
+
+.img-h{
+  height: 500px;
+
+}
