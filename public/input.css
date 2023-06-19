@@ -100,7 +100,7 @@ color: #166534;
     width: 100%;
 }
 
-.size{
+.size-line{
   padding: 3px;
 }
 
@@ -125,3 +125,39 @@ color: #166534;
   height: 500px;
 
 }
+
+
+/* swipe Css  */
+
+html,
+    body {
+      height: 100%;
+    }
+
+    body {
+  
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    swiper-container {
+      width: 100%;
+      height: 50%;
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #eceaea;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
