@@ -914,12 +914,12 @@ video {
   padding: 1rem;
 }
 
-.p-8 {
-  padding: 2rem;
-}
-
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .px-4 {
@@ -1305,32 +1305,60 @@ html,
 }
 
 body {
-  color: #000;
   margin: 0;
   padding: 0;
 }
 
 swiper-container {
   width: 100%;
-  height: 50%;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #eceaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
 }
 
 swiper-slide img {
   display: block;
   width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
+
+/* html,
+    body {
+      height: 100%;
+    }
+
+    body {
+  
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    swiper-container {
+      width: 100%;
+      height: 50%;
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #eceaea;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    } */
 
 .hover\:border-neutral-100:hover {
   --tw-border-opacity: 1;
