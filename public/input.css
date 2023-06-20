@@ -188,3 +188,18 @@ html,
       height: 100%;
       object-fit: cover;
     } */
+
+    .gallary-img{
+      height: 400px; 
+      width: 100%;
+
+    }
+
+
+    @media only screen and (max-width: 450px) {
+      .gallary-img{
+        height: 250px;
+width: 100%;
+      }
+    }
+
