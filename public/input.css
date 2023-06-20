@@ -50,78 +50,80 @@
 /* CUSTOM CSS SECTION END */
 
 
-.font-family-class{
+.font-family-class {
   /* font-family: 'Lato', sans-serif; */
   font-family: 'Nunito Sans', sans-serif;
 }
 
-.header-back-colr{
+.header-back-colr {
   background-color: #166534;
 }
 
-.text-hover-class:hover{
-color: #166534;
+.text-hover-class:hover {
+  color: #166534;
 }
 
-.logo-size{
+.logo-size {
   height: 90px;
 }
 
-.back{
+.back {
   background: url('https://media.istockphoto.com/id/1082411378/photo/magical-fairytale-forest.jpg?s=612x612&w=0&k=20&c=3iw53YdeeFEqRuxcUL0UCQZUMJ3e2IRtUfvgSjAysjQ=');
 }
 
-.mission-vision{
+.mission-vision {
   height: 100px;
   width: 100px;
 }
 
-.body-color-website{
-  background-color: #fff;;
+.body-color-website {
+  background-color: #fff;
+  ;
 }
 
 
-.size{
+.size {
   height: 20%;
 }
 
-.team-img-size{
+.team-img-size {
   height: 359px;
 }
 
-.footer-back-color{
-  background-color: #3f3826;;
+.footer-back-color {
+  background-color: #3f3826;
+  ;
   /* background-color:rgb(236, 230, 230); */
 }
 
 
-.product-img-size{
+.product-img-size {
   height: 250px;
-    width: 100%;
+  width: 100%;
 }
 
-.size-line{
+.size-line {
   padding: 3px;
 }
 
-.font-size-width{
+.font-size-width {
   max-width: 460px;
 }
 
 
-.team-width{
+.team-width {
   width: 450px;
 }
 
 
 
 @media only screen and (max-width: 865px) {
-  .work-img{
+  .work-img {
     height: 100%;
   }
 }
 
-.img-h{
+.img-h {
   height: 500px;
 
 }
@@ -129,33 +131,34 @@ color: #166534;
 
 /* swipe Css  */
 html,
-    body {
-      /* position: relative; */
-      height: 100%;
-    }
+body {
+  /* position: relative; */
+  height: 100%;
+}
 
-    body {
-      margin: 0;
-      padding: 0;
-    }
+body {
+  margin: 0;
+  padding: 0;
+}
 
-    swiper-container {
-      width: 100%;
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
+swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 
-    swiper-slide {
-      background-position: center;
-      background-size: cover;
-      width: 300px;
-      height: 300px;
-    }
+swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
 
-    swiper-slide img {
-      display: block;
-      width: 100%;
-    }
+swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
 /* html,
     body {
       height: 100%;
@@ -189,17 +192,23 @@ html,
       object-fit: cover;
     } */
 
-    .gallary-img{
-      height: 400px; 
-      width: 100%;
+.gallary-img {
+  height: 400px;
+  width: 100%;
 
-    }
+}
 
 
-    @media only screen and (max-width: 450px) {
-      .gallary-img{
-        height: 250px;
-width: 100%;
-      }
-    }
+@media only screen and (max-width: 450px) {
+  .gallary-img {
+    height: 250px;
+    width: 100%;
+  }
+}
 
+
+
+.what-we-do-img{
+  width: 100%;
+  height: 300px;
+}
