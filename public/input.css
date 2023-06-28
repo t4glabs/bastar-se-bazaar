@@ -52,7 +52,8 @@
 
 .font-family-class {
   /* font-family: 'Lato', sans-serif; */
-  font-family: 'Nunito Sans', sans-serif;
+  /* font-family: 'Nunito Sans', sans-serif; */
+  font-family: 'Poppins', sans-serif;
 }
 
 .header-back-colr {
@@ -207,4 +208,10 @@ swiper-slide img {
 .home-page-img{
   width: 500px;
   height: 200px;
+}
+
+
+.mission-box-color{
+  background: #F5DEA8;
+
 }
