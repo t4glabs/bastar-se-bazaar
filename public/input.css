@@ -211,7 +211,13 @@ swiper-slide img {
 }
 
 
+
+.about-us-page-img{
+  width: 500px;
+  height: 300px;
+}
+
 .mission-box-color{
-  background: #F5DEA8;
+  background: #fae8bf;
 
 }
