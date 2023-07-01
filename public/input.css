@@ -205,12 +205,15 @@ swiper-slide img {
 
 
 
-.home-page-img{
+/* .home-page-img{
+  width: 500px;
+  height: 200px;
+} */
+
+.home-page-img-1{
   width: 500px;
   height: 200px;
 }
-
-
 
 .about-us-page-img{
   width: 500px;
